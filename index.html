@@ -9,9 +9,19 @@
             color: #0d0029;
         }
 
-    #background{
-            background: #d8d8d8;
+    #journey-text{
+            /*background: #d8d8d8; */
+            background: rgba(216, 216, 216, 0.6);
+            align-items: center;
+            font-size: 2em;
+            padding: 1.5rem;
+            border-radius: 10px;
         }
+        a{
+            text-decoration: none;
+            color: #1a1a1a;
+        }
+
     header {
         text-align: center;
         display: flex;
@@ -29,6 +39,35 @@
     ul {
         padding: 0;
     }
+    .journey-image {
+        background: url(images/background.jpg) no-repeat center center ;
+        min-height: 100vh;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    @media (min-width: 1000px) {
+        body {
+            max-width: 1600px;
+            margin: 0 auto;
+        }
+        header {
+            flex-direction: row;
+        }
+        header li {
+            display: inline-block;
+        }
+        header h1, header nav{
+            flex: 1;
+        }
+        header h1 {
+            text-align: left;
+        }
+        header nav {
+            text-align: right;
+        }
+    }
     </style>
 </head>
 <body>
@@ -42,7 +81,7 @@
             </ul>
         </nav>
     </header>
-    <div>
-        <p class id="background">Hi, I'm Akhtar <br> Follow me on my way journey around the <strong><em>world!</em></strong></p>
+    <div class="journey-image">
+        <p class id="journey-text">Hi, I'm Akhtar <br> Follow me on my way journey around the <strong><em>world!</em></strong></p>
     </div>
 </body>
